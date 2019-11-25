@@ -4,10 +4,12 @@
 3. Enable virtual environment in jupyter Kernel. Two ways so far to do it:
    1. `conda install nb_conda` so that you can choose the conda environment in `kernel` in Jupyter
    2. Or. install `ipykernel`,
-      >`pip install --user ipykernel`
+
+      `pip install --user ipykernel`
 
       then create a kernel file
-      >`python -m ipykernel install --user --name=base --display-name="Python (base)`
+      
+      `python -m ipykernel install --user --name=base --display-name="Python (base)`
 
       where `name` and `display-name` is user-defined
 4. In jupyter `new`, choose the kernel that has `display-name`
