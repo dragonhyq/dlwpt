@@ -1,6 +1,17 @@
-1. install conda
-2. build pytorch from source
-3. `conda install nb_conda` so that you can choose the conda environment in `kernel` in Jupyter
+## Install Conda and Jupyter
+1. Install conda
+2. Build pytorch from source
+3. Enable virtual environment in jupyter Kernel. Two ways so far to do it:
+   1. `conda install nb_conda` so that you can choose the conda environment in `kernel` in Jupyter
+   2. Or. install `ipykernel`,
+      >`pip install --user ipykernel`
+
+      then create a kernel file
+      >`python -m ipykernel install --user --name=base --display-name="Python (base)`
+
+      where `name` and `display-name` is user-defined
+4. In jupyter `new`, choose the kernel that has `display-name`
+ 
 
 At first I was getting `Illegal Instruction 4` when trying to run torch, then saw this [issue](https://github.com/pytorch/pytorch/issues/29967) telling me to try the nighly version, and it solved the problem for me.
 
