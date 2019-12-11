@@ -2,6 +2,7 @@ A good simple tutorial for absolute beginners: [Jupyter Notebook for Beginners: 
 
 
 Keyboard shortcut:
+
 | shortcut | Meaning |
 |:--- | :--- |
 | `Ctrl + Enter` | run current cell |
